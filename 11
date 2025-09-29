@@ -1,0 +1,11 @@
+text = input("Enter a string: ").lower()  # Convert to lowercase for uniform comparison
+
+vowels = "aeiou"
+count = 0
+
+for ch in text:
+    if ch not in vowels:
+        continue  # Skip consonants and other characters
+    count += 1
+
+print("Number of vowels in the string:", count)
