@@ -1,0 +1,8 @@
+text = input("Enter a string to reverse: ")
+
+reversed_text = ""
+
+for i in range(len(text) - 1, -1, -1):  # Start from last index to 0
+    reversed_text += text[i]
+
+print("Reversed string:", reversed_text)
