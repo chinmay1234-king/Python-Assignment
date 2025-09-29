@@ -1,0 +1,15 @@
+Str1 = "India is a great Nation"
+print("We need to find the first non-repeating character in the above string\n")
+
+# Create a dictionary to count occurrences
+char_count = {}
+
+for ch in Str1:
+    if ch != ' ':  # Ignore spaces
+        char_count[ch] = char_count.get(ch, 0) + 1
+
+# Find the first character with count 1
+for ch in Str1:
+    if ch != ' ' and char_count[ch] == 1:
+        print("First non-repeating character is:", ch)
+        break
