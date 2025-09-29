@@ -1,0 +1,14 @@
+num = int(input("Enter the value of the number: "))
+print("We need to find the sum of the digits of the above number\n")
+
+sum = 0
+while num != 0:
+    last_digit = num % 10
+    num //= 10  # Move this up to avoid infinite loop
+
+    if last_digit == 0:
+        continue  # Skip zeros
+
+    sum += last_digit
+
+print("Sum of digits is:", sum)
