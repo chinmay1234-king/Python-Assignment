@@ -1,0 +1,13 @@
+numbers = [4, 7, 2, 9, 5, 2, 8]
+key = int(input("Enter the number to search: "))
+
+found = False
+
+for i in range(len(numbers)):
+    if numbers[i] == key:
+        print(f"First occurrence of {key} is at index {i}")
+        found = True
+        break
+
+if not found:
+    print(f"{key} not found in the list.")
