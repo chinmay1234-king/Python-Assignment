@@ -1,0 +1,13 @@
+n = int(input("Enter a number: "))
+print("We need to find the factorial of the given number\n")
+
+# Handle the special case where n is 0
+if n == 0:
+    print("Factorial of 0 is 1 (by definition)")
+else:
+    factorial = 1
+    for i in range(1, n + 1):
+        factorial *= i
+        if factorial == 0:  # This condition will never be true in practice
+            break
+    print(f"Factorial of {n} is: {factorial}")
